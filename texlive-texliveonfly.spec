@@ -1,4 +1,4 @@
-# revision 24200
+# revision 26313
 # category Package
 # catalog-ctan /support/texliveonfly
 # catalog-date 2011-10-04 11:31:57 +0200
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-texliveonfly
 Version:	20111004
-Release:	2
+Release:	3
 Summary:	On-the-fly download of missing TeX live packages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/texliveonfly
