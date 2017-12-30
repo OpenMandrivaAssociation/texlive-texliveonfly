@@ -5,8 +5,8 @@
 # catalog-license gpl3
 # catalog-version undef
 Name:		texlive-texliveonfly
-Version:	20111004
-Release:	11
+Version:	20170414
+Release:	1
 Summary:	On-the-fly download of missing TeX live packages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/texliveonfly
