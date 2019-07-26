@@ -4,9 +4,11 @@
 # catalog-date 2011-10-04 11:31:57 +0200
 # catalog-license gpl3
 # catalog-version undef
+%global _python_bytecompile_build 0
+
 Name:		texlive-texliveonfly
-Version:	20170414
-Release:	2
+Version:	20190228
+Release:	1
 Summary:	On-the-fly download of missing TeX live packages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/texliveonfly
@@ -58,19 +60,4 @@ popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
 
-
-%changelog
-* Wed Aug 08 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111004-3
-+ Revision: 812910
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 20111004-2
-+ Revision: 756635
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20111004-1
-+ Revision: 719698
-- texlive-texliveonfly
-- texlive-texliveonfly
-- texlive-texliveonfly
 
