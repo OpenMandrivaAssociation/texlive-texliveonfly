@@ -4,6 +4,8 @@
 # catalog-date 2011-10-04 11:31:57 +0200
 # catalog-license gpl3
 # catalog-version undef
+%global _python_bytecompile_build 0
+
 Name:		texlive-texliveonfly
 Version:	20190228
 Release:	1
