@@ -1,20 +1,14 @@
-# revision 26313
-# category Package
-# catalog-ctan /support/texliveonfly
-# catalog-date 2011-10-04 11:31:57 +0200
-# catalog-license gpl3
-# catalog-version undef
 %global _python_bytecompile_build 0
 
 Name:		texlive-texliveonfly
-Version:	20190228
-Release:	2
+Version:	55777
+Release:	1
 Summary:	On-the-fly download of missing TeX live packages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/texliveonfly
 License:	GPL3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texliveonfly.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texliveonfly.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texliveonfly.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texliveonfly.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -33,12 +27,12 @@ changed). The script is designed to work on Linux
 distributions.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -48,16 +42,14 @@ distributions.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_bindir}
 pushd %{buildroot}%{_bindir}
-    ln -sf %{_texmfdistdir}/scripts/texliveonfly/texliveonfly.py texliveonfly
+ln -sf %{_texmfdistdir}/scripts/texliveonfly/texliveonfly.py texliveonfly
 popd
 mkdir -p %{buildroot}%{_datadir}
 cp -fpar texmf-dist %{buildroot}%{_datadir}
-
-
