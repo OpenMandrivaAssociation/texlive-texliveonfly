@@ -2,7 +2,7 @@
 
 Name:		texlive-texliveonfly
 Version:	55777
-Release:	1
+Release:	2
 Summary:	On-the-fly download of missing TeX live packages
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/support/texliveonfly
