@@ -5,7 +5,7 @@ Version:	55777
 Release:	2
 Summary:	On-the-fly download of missing TeX live packages
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/support/texliveonfly
+URL:		https://www.ctan.org/tex-archive/support/texliveonfly
 License:	GPL3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texliveonfly.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/texliveonfly.doc.r%{version}.tar.xz
