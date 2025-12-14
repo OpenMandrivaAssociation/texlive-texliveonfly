@@ -1,8 +1,8 @@
 %global _python_bytecompile_build 0
 
 Name:		texlive-texliveonfly
-Version:	55777
-Release:	2
+Version:	76924
+Release:	1
 Summary:	On-the-fly download of missing TeX live packages
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/support/texliveonfly
