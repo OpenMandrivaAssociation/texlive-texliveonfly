@@ -1,5 +1,6 @@
 %global tl_name texliveonfly
 %global tl_revision 76924
+%global tl_bin_links texliveonfly:%{_texmfdistdir}/scripts/texliveonfly/texliveonfly.py
 
 Name:		texlive-%{tl_name}
 Version:	%{tl_revision}
@@ -14,6 +15,8 @@ BuildArch:	noarch
 BuildSystem:	texlive
 Requires:	texlive(texliveonfly.bin)
 Provides:	texlive(%{tl_name}) = %{tl_revision}
+Provides:	texlive(%{tl_name}.bin) = %{tl_revision}
+Provides:	texlive-%{tl_name}.bin = %{EVRD}
 
 %description
 The package provides a script that performs 'on the fly' downloads of
